@@ -20,8 +20,9 @@
      
       <div class="wrapper">
 <div class="container-fluid bg-white">
+    
+        <h1 class="main-title">Richard Houet</h1>    
     <div class="nav-list">
-        <h1 class="main-title">Richard Houet</h1>
 
     <ul>
 
@@ -41,7 +42,7 @@
 <!--   P A R C O U R S   -->
 
 
-<div class="container parcours" id="parcours">
+<div class="container-fluid parcours" id="parcours">
     <h1 class="title">Parcours</h1>
     <ul>
         
@@ -68,7 +69,7 @@
         </div>
 
         <div class="parcours-list">
-        <h2 class="parcours-title">Skills</h2>
+        <h2 class="parcours-title">Compétances</h2>
         <p class="parcours"></br>
         <strong>Langue:</br></strong>
           Anglais (niveau expérimenté)</br>
@@ -215,7 +216,7 @@ $(document).ready(function() {
 
      $(".odd").click( function(){
          if($(this).hasClass("right")){
-            $(this).removeClass("right", 500);
+            $(this).removeClass("right" , 500);
             $(this).prev().toggle(500);
            
          } else {
@@ -230,10 +231,10 @@ $(document).ready(function() {
      $(".even").click( function(){
          if($(this).hasClass("left")){
             $(this).removeClass("left", 500);
-            $(this).prev().toggle(500);
+            $(this).prev().toggle(1000);
          } else {
             $(this).addClass('left', 500);
-            $(this).prev().toggle(500);   
+            $(this).prev().toggle(1000);   
          }
          ++clicks;
      });

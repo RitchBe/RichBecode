@@ -1,3 +1,9 @@
+
+
+
+
+
+
 /****************************************************************
 GENERAL
 *****************************************************************
@@ -167,6 +173,7 @@ input {
     margin: auto;
     margin-top: 50px;
     filter: grayscale(100%) brightness(100%);
+    -webkit-filter: grayscale(100%) brightness(100%);
     width: 15%;
     height: 15%;
     border-radius: 100%;
@@ -274,7 +281,7 @@ div.carousel {
     line-height:1.375em;
     font-weight: 400;
     padding-top: 5%;
-    color: grey;
+    color: darkgrey;
 }
 
 p.objectifs, p.avantage {
@@ -375,6 +382,34 @@ footer a {
 MEDIA QUERY
 **************************************************************************************
 */
+/*Removing Animation on Mobil */
+@media screen and (max-width: 700px) {
+    a.navigation-main {
+        transition: none;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -o-transition: none;
+    }
+    a.navigation-main:hover {
+        transition: none;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -o-transition: none;
+        padding: 5px 30% 5px 10px;
+    }
+    input {
+        transition: none;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -o-transition: none;
+    }
+    footer .glyphicon:hover {
+        transition: none;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -o-transition: none;
+    }
+}
 
 
 /* Media Query for the police/font */
@@ -572,6 +607,9 @@ MEDIA QUERY
     div.carousel {
         width: 90%;
     }
+    h2 {
+        font-size: 175%;
+    }
 }
 /* Media Query for pq Becode with font */
 @media screen and (max-width: 580px) {
@@ -595,7 +633,8 @@ h3 {
 }
 
 p.avantage {
-    padding-top: 10%;
+    padding-top: 1%;
+    font-size: 125%;
 }
 }
 
@@ -647,3 +686,4 @@ h3 {
     letter-spacing: 0.2em;
 }
 }
+

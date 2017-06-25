@@ -81,6 +81,7 @@ h1 {
     padding-top: 1em;
     color: #900C3F;
     margin-right: 10%;
+    font-size: 350%;
 }
 
 
@@ -111,6 +112,9 @@ a.navigation-main {
     font-weight: lighter;
     color: grey;
     transition: 0.9s;
+    -webkit-transition: 0.9s;
+    -moz-transition: 0.9s;
+    -o-transition: 0.9s;
     text-align: left;
 }
 
@@ -119,6 +123,9 @@ a.navigation-main:hover {
     background-color: white;
     box-shadow: 0px 0px 60px grey;
     transition: 0.9s;
+    -webkit-transition: 0.9s;
+    -moz-transition: 0.9s;
+    -o-transition: 0.9s;
     text-decoration: none;
     padding: 5px 50% 5px 30px;
 }
@@ -164,10 +171,14 @@ input {
     height: 15%;
     border-radius: 100%;
     transition: 1.5s;
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5s;
+    -o-transition: 1.5s;
     position: relative;
     right: 0%;
     box-shadow: white;
     overflow: hidden;
+    z-index: 999;
 }
 input:hover {
     box-shadow: 0px 0px 50px grey;
@@ -234,6 +245,9 @@ div.objectifs {
   text-shadow: 0px 0px 15px #900C3F ;
   color: #900C3F;
   transition: 0.5s;
+      -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
 }
 
 .carousel-indicators li {
@@ -246,7 +260,6 @@ div.objectifs {
 
 
 div.carousel {
-    margin-left: 15%;
     height: 300px;
     width: 60%;
     margin: auto;
@@ -257,13 +270,21 @@ div.carousel {
     
 }
 
-.item h4 {
-    font-size: 19px;
+.item h2 {
     line-height:1.375em;
     font-weight: 400;
-    padding-top: 20%;
+    padding-top: 5%;
+    color: grey;
 }
 
+p.objectifs, p.avantage {
+    padding-top: 1%;
+    font-size: 140%;
+    color: grey;
+    margin-left: 15%;
+    margin-right: 15%;
+    
+}
 
 /******************************************************************************************
 POURQUOI BECODE
@@ -303,12 +324,14 @@ h3 {
 
 
 h3.methode {
-    margin-top: 1px;
+    margin-top: 5px;
     padding-bottom: 3%;
 }
 
 p.avantage {
-    padding-top: 10%;
+    padding-top: 5%;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
 /************************************************************************************
@@ -330,7 +353,10 @@ footer .glyphicon {
 footer .glyphicon:hover{
     text-shadow: 0px 0px 15px #900C3F;
     color: #900C3F;
-    transition: 0.5s;
+    transition: 0.5s;    
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
 }
 
 p.footer {

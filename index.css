@@ -281,12 +281,12 @@ div.carousel {
     line-height:1.375em;
     font-weight: 400;
     padding-top: 5%;
-    color: darkgrey;
+    color: #900C3F;
 }
 
 p.objectifs, p.avantage {
     padding-top: 1%;
-    font-size: 140%;
+    font-size: 160%;
     color: grey;
     margin-left: 15%;
     margin-right: 15%;
@@ -339,6 +339,8 @@ p.avantage {
     padding-top: 5%;
     margin-right: 5px;
     margin-left: 5px;
+    line-height: 2em;
+    text-align: left;
 }
 
 /************************************************************************************
@@ -609,6 +611,13 @@ MEDIA QUERY
     }
     h2 {
         font-size: 175%;
+    }
+}
+
+
+@media screen and (max-width: 440px) {
+    p.objectifs {
+        font-size: 135%;
     }
 }
 /* Media Query for pq Becode with font */

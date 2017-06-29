@@ -12,6 +12,8 @@ html{
     margin-left: auto;
     margin-right: auto;
 }
+
+
 body {
     margin-left:auto;
     margin-right:auto;
@@ -24,13 +26,15 @@ body {
     overflow-x: hidden;
 }
 
+
 .wrapper {
     margin: 0 auto;
 }
+
+
 .slideanim {
     visibility: hidden;
 }
-
 .slide {
     animation-name: slide;
     -webkit-animation-name: slide;
@@ -48,7 +52,6 @@ body {
         transform: translateY(0%);
     }
 }
-
 @-webkit-keyframes slide {
     0% {
     opacity: 0;
@@ -67,17 +70,19 @@ a:hover {
     color:grey;
 }
 
+
 ul {
     margin-top: 4%;
     margin-bottom: 4%;
     width: 100%;
 }
-
 li {
     text-align: left;
     list-style-type: none;
     font-weight: lighter;
     }
+
+
 
 h1 {
     text-align: left;
@@ -90,6 +95,12 @@ h1 {
     font-size: 350%;
 }
 
+strong {
+    color: #900C3F;
+}
+
+
+
 
 /********************************************************************
 HEADER
@@ -101,8 +112,9 @@ div.bg-white {
 }
 div.nav-list {
     width: 100%;
-    /*align-content: center;*/
 }
+
+
 
 li.navigation-main {
     font-size: 200%;
@@ -110,10 +122,7 @@ li.navigation-main {
     margin-bottom: 2em;
     text-align: left;
     margin-left: 5%;
-
 }
-
-
 a.navigation-main {
     font-weight: lighter;
     color: grey;
@@ -123,7 +132,6 @@ a.navigation-main {
     -o-transition: 0.9s;
     text-align: left;
 }
-
 a.navigation-main:hover {
     color: grey;
     background-color: white;
@@ -136,6 +144,7 @@ a.navigation-main:hover {
     padding: 5px 50% 5px 30px;
 }
 
+
 h1.main-title {
     margin-top: 8%;
     margin-bottom:8%;
@@ -145,10 +154,21 @@ h1.main-title {
 }
 
 
+
+
+
+
+
 /* ******************************************************************
 PARCOURS
 *********************************************************************
 */
+
+div.parcours-list {
+    width: 100%;
+    margin-bottom: 5em;
+}
+
 
 h1.title {
     padding-left: 1.1em;
@@ -157,16 +177,12 @@ h1.title {
     padding-bottom: 3%;
 }
 
-div.parcours-list {
-    width: 100%;
-    margin-bottom: 5em;
-}
-
 h2.parcours-title {
     text-align: left;
     color: grey;
-
 }
+
+
 
 input {
     display: block;
@@ -198,8 +214,9 @@ input.odd.right{
     right: 40%;
     margin-bottom: 5px;
     box-shadow: 0px 0px 50px grey;
-
 }
+
+
 
 p.parcours {
     font-size: 150%;
@@ -215,21 +232,17 @@ p.parcours {
     padding-left:10px;
     padding-right:10px;
 }
-
 p.voyage{
     line-height: 30px;
     padding-left: 20px;
     padding-right: 20px;
 }
-strong {
-    color: #900C3F;
-}
+
 
 a.codecademy {
     color: grey;
     font-style: italic;
 }
-
 a.codecademy:hover {
     color: pink;
 }
@@ -242,6 +255,8 @@ div.objectifs {
     margin-bottom: 5em;
     width: 100%;
 }
+
+
 
 .carousel-control.right, .carousel-control.left {
     background-image: none;
@@ -266,6 +281,8 @@ div.objectifs {
 }
 
 
+
+
 div.carousel {
     height: 300px;
     width: 60%;
@@ -277,6 +294,7 @@ div.carousel {
     
 }
 
+
 .item h2 {
     line-height:1.375em;
     font-weight: 400;
@@ -284,22 +302,28 @@ div.carousel {
     color: #900C3F;
 }
 
-p.objectifs, p.avantage {
+
+p.objectifs{
     padding-top: 1%;
     font-size: 160%;
     color: grey;
     margin-left: 15%;
-    margin-right: 15%;
-    
+    margin-right: 15%;    
 }
+
+
+
+
 
 /******************************************************************************************
 POURQUOI BECODE
 *******************************************************************************************
 */
-#pqBecode {
+#pqBecode { /*Pq becode title */
     font-size: 300%;
 }
+
+
 div.pqBecode {
     margin-top:2em;
     width: 100%;
@@ -309,7 +333,6 @@ div.row {
     margin-right: 15%;
     width: 80%;
 }
-
 div.col-md-3{
     margin-top: 0px;
     margin-bottom: 5em;
@@ -325,26 +348,31 @@ div.col-md-3{
 
 
 
+
 h3 {
     letter-spacing: 0.2em;
     border-bottom: 1px solid #900C3F;
     padding-bottom: 15px;
     color: grey;
+    font-size: 150%;
 }
-
-
 h3.methode {
     margin-top: 5px;
     padding-bottom: 3%;
 }
-
 p.avantage {
     padding-top: 5%;
     margin-right: 5px;
     margin-left: 5px;
     line-height: 2em;
     text-align: left;
+    font-size: 135%;
+    color: grey;
 }
+
+
+
+
 
 /************************************************************************************
 FOOTER
@@ -460,24 +488,13 @@ MEDIA QUERY
         letter-spacing: 0.4em;
         padding-left: 0.3em;
     }
-        /*div.bg-white {
-        width: 90%;
-    }
-        div.nav-list {
-        width: 90%;
-    }*/
 }
 
 @media screen and (min-width: 470px) and (max-width: 580px) {
         li.navigation-main {
         font-size: 140%;
         }
-        /*div.bg-white {
-        width: 80%;
-    }
-        div.nav-list {
-        width: 80%;
-    }*/
+
 }
 
 
@@ -513,12 +530,7 @@ MEDIA QUERY
     a {
         font-size: 80%;
     }
-    /*div.bg-white {
-        width: 90%;
-    }
-    div.nav-list {
-        width: 80%;
-    }*/
+
 }
 @media screen and (min-width: 1000px) {
     li.navigation-main {
@@ -526,7 +538,6 @@ MEDIA QUERY
         margin-left: 0px;
         font-size: 250%;
         letter-spacing: 0.3em;
-        /*padding-right: 5%        */
     }
 
     a.main-title {
